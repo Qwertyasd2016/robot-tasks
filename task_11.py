@@ -5,7 +5,12 @@ from pyrob.api import *
 
 @task
 def task_8_4():
-    pass
+    while wall_is_on_the_right()==False:
+        if wall_is_beneath()==True and wall_is_above()==True:
+            fill_cell()
+        move_right(n=1)
+    if wall_is_beneath()==True and wall_is_above()==True:
+        fill_cell()
 
 
 if __name__ == '__main__':
