@@ -12,7 +12,7 @@ def task_7_5():
         a+=1
         for i in range(a):
             if wall_is_on_the_right()==False: move_right(n=1)
-        fill_cell()
+        if wall_is_on_the_right()==False:fill_cell()
 
 
 
