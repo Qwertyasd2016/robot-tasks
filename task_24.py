@@ -5,6 +5,7 @@ from pyrob.api import *
 
 @task
 def task_2_1():
+    pass
 
 
 
